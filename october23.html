@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<style>
+  .store{
+    border: 1px solid azure;
+    height: 100px;
+    width: 100%;
+    margin-left: 40%;
+  }
+  .nav-item{
+    
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+  
+</style>
+</head>
+
+<body>
+    
+
+    <header class="p-3 mb-3 border-bottom" style="position: static;">
+        <div class="container" style="margin: 0;padding: 0;">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none" previewlistener="true">
+              <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg> -->
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="./index.html" class="nav-link px-2 link-secondary">Batches</a></li>
+              <li><a href="./Chats.html" class="nav-link px-2 link-body-emphasis">Chats</a></li>
+              <li><a href="./Store.html" class="nav-link px-2 link-body-emphasis">Store</a></li>
+              <!-- <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li> -->
+            </ul>
+    
+            
+            <img height="30" id="NotificationBellIcon" class="notificationBellIcon" width="18" src="./bell-fill.svg" alt="bell-icon" style=" position: absolute; right:240px ">
+    
+            <div class="dropdown text-end" style="padding: 10px; position: absolute; right:80px ">
+              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./profileimage.jpeg" alt="PK" width="32" height="32" class="rounded-circle" >
+                Prasad K
+              </a>
+              <ul class="dropdown-menu text-small" >
+                <li ><img src="./profileimage.jpeg" alt="PK" width="32" height="32" class="rounded-circle" ></li>
+                <li><a class="dropdown-item" href="#">Prasad K</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
+        <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" previewlistener="true">
+          <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Sidebar</span>
+        </a>
+        <hr> -->
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+              <img src="./list-ul.svg" alt="list">
+              Overview
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+              <img src="./calendar.svg" alt="list">
+              Attendance
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+              <img src="./pencil.svg" alt="list">
+              Assignments
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+              <img src="./megaphone.svg" alt="list">
+              Announcements
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              <img src="./award.svg" alt="list">
+              Tests
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              <img src="./film.svg" alt="list">
+              Videos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              <img src="./collection-play.svg" alt="list">
+              Live classes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              <img src="./book.svg" alt="list">
+              Study material
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <!-- <div class="dropdown" hidden>
+          <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu text-small shadow">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div> -->
+      </div>   

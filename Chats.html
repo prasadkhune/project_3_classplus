@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web.classplusapp.com</title>
+    <title>Messages</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <style>
+/* .main-content2{
+  display: grid;
+  /* grid-template-rows: 45px 45px 45px 45px 45px  ; */
+  /* grid-template-columns: 235px auto; */
+  
+  /* gap: 10px; */
+/* } */
+/* .chatting{
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3; */
+  /* grid-row-start: 1; */
+  /* grid-row-end: 4; */
+/* } */
+.grid-container {
+  display: grid;
+  grid-template-rows: 50px 50px;
+  grid-template-columns: 300px  ;
+  gap: 12px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  margin:80px;
+}
+.item1{
+  border: 0.1px solid rgb(227, 183, 183) ;
+  /* background-color: rgb(179, 174, 167); */
+}
+.item2{
+  grid-row: 1 / span 6;
+  grid-column: 2;
+  text-align: center;
+  /* justify-content: center; */
+  align-items: center;
 
+}
+.item-search{
+  position: absolute;
+  left: 110px;
+  top: 230px;
+}
+.item4{
+  opacity: 1;
+}
 </style>
 </head>
 
@@ -50,4 +91,33 @@
       </header>
 
 
-      
+<div >
+ <!-- <div class="main-content2">
+  <p>Chats</p>
+  <p>search by name</p>
+  <p>Messages</p>
+  <p>October 23AST batch</p>
+  <p>Chanakya Uni</p><br>
+  <p class="chatting">No conversation selected Select a conversation from the left panel</p>
+
+
+ </div> -->
+ <div class="grid-container">
+  <div class="item1">Chats</div>
+  <div class="item2"><img src="./chat-left-text.svg" height="50px" width="25px"><br><img src="./chat-left-text.svg" height="50px" width="25px"><br>No conversation selected Select a conversation from the left panel</div>
+  <div class="item3"><img src="./search.svg" alt="search"><form class="item-search"><input type="text" placeholder="search by name"></form></div>  
+  <div class="item4">Messages</div>
+  <div class="item5"><a href="#" class="d-block link-body-emphasis text-decoration-none " data-bs-toggle="dropdown" aria-expanded="false">
+    <img src="./o.png" alt="PK" width="32" height="32" class="rounded-circle" >
+    October 23AST batch 
+  </a></div> 
+  <div class="item6"><a href="#" class="d-block link-body-emphasis text-decoration-none " data-bs-toggle="dropdown" aria-expanded="false">
+    <img src="./chanakya uni.jpg" alt="PK" width="32" height="32" class="rounded-circle" >Chanakya Uni</div>
+  <div class="item7"></div>
+  <div class="item8"></div>  
+</div>
+
+
+
+
+</div>
